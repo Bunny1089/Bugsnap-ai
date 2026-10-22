@@ -1,0 +1,209 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, SFMono-Regular, monospace;
+
+  /* Dark Graphite Developer-Workbench Palette */
+  --bg-canvas: #0B0E14;
+  --bg-surface: #11151F;
+  --bg-surface-raised: #171C28;
+  --bg-surface-hover: #1E2433;
+  --bg-surface-inset: #080A0E;
+  --bg-surface-active: #222938;
+
+  /* Borders & Dividers */
+  --border-hairline: rgba(255, 255, 255, 0.05);
+  --border-subtle: #1F2633;
+  --border-default: #2A3345;
+  --border-strong: #3E4B63;
+  --border-focus: #8B70E6;
+
+  /* Restrained Violet & Technical Accents */
+  --accent-violet: #8B70E6;
+  --accent-violet-hover: #9E86EF;
+  --accent-violet-active: #7A5FD4;
+  --accent-violet-muted: rgba(139, 112, 230, 0.12);
+  --accent-violet-border: rgba(139, 112, 230, 0.35);
+
+  /* Status Colors (Muted, Engineering Tone) */
+  --status-ok: #34D399;
+  --status-ok-bg: rgba(52, 211, 153, 0.08);
+  --status-ok-border: rgba(52, 211, 153, 0.25);
+
+  --status-warn: #FBBF24;
+  --status-warn-bg: rgba(251, 191, 36, 0.08);
+  --status-warn-border: rgba(251, 191, 36, 0.25);
+
+  --status-err: #F87171;
+  --status-err-bg: rgba(248, 113, 113, 0.08);
+  --status-err-border: rgba(248, 113, 113, 0.25);
+
+  --status-info: #60A5FA;
+  --status-info-bg: rgba(96, 165, 250, 0.08);
+  --status-info-border: rgba(96, 165, 250, 0.25);
+
+  /* Typography Colors */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --text-dim: #475569;
+  --text-disabled: #334155;
+
+  /* Technical Radii */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-focus: 0 0 0 2px var(--bg-canvas), 0 0 0 4px var(--accent-violet);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font: inherit;
+    color: inherit;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: var(--radius-xs);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* Focus Visible Global Styling */
+:focus-visible {
+  outline: 2px solid var(--accent-violet);
+  outline-offset: 2px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes terminalScan {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spin {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
