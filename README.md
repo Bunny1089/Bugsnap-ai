@@ -1,20 +1,7 @@
-<!--
-  ============================================================================
-  TODO: Media Assets to add in docs/images/:
-  - docs/images/landing.png
-  - docs/images/workbench.png
-  - docs/images/analyzing.png
-  - docs/images/result.png
-  - docs/images/markdown.png
-  - docs/images/secrets.png
-  - docs/images/annotate.png
-  ============================================================================
--->
-
 <div align="center">
 
-<!-- Capsule Render Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2&customColorList=%233a0ca3,%237209b7&height=220&section=header&text=BUGSNAP%20AI&fontSize=64&fontAlignY=38" width="100%" alt="BugSnap AI Banner" />
+<!-- BugSnap AI Banner -->
+<img src="docs/BugSnap%20AI%20Banner.png" width="100%" alt="BugSnap AI Banner" />
 
 <!-- Typing SVG Tagline -->
 <a href="https://github.com/Bunny1089/BUGSNAP">
@@ -74,9 +61,9 @@ BugSnap AI was crafted as an open-source contribution for **Hacktoberfest Hack D
 
 ## 🎬 Video Demo & Preview
 
-[![Watch the BugSnap AI Video Demo](docs/images/workbench.png)](YOUR_VIDEO_URL)
+[![Watch the BugSnap AI Video Demo](docs/working.png)](https://youtu.be/aR8upy0Y5qw)
 
-> 📹 **[Watch the Complete 3-Minute Walkthrough Video](YOUR_VIDEO_URL)**  
+> 📹 **[Watch the Complete Walkthrough Video on YouTube](https://youtu.be/aR8upy0Y5qw)**  
 > *Shows live screenshot paste, multi-image sequencing, on-device Gemma 4 vision inference, sensitive key detection, canvas annotation, and Markdown export.*
 
 ---
@@ -108,31 +95,31 @@ Filing and triaging bug reports is one of the biggest productivity sinks in soft
 <div align="center">
 
 ### 1. Modern Landing Page
-![Landing Hero](docs/images/landing.png)
+![Landing Hero](docs/working.png)
 *High-converting dark aesthetic hero featuring real-time health indicator, feature highlights, and 1-click launcher.*
 
 ### 2. Developer Studio & Multi-Image Ingestion
-![Workbench Overview](docs/images/workbench.png)
+![Workbench Overview](docs/working.png)
 *Two-pane studio with drag-and-drop viewfinder, multi-image thumbnail strip, 7 benchmark presets, and quick-fill context chips.*
 
 ### 3. Step-by-Step Local Inference
-![Inference Progress](docs/images/analyzing.png)
+![Inference Progress](docs/working.png)
 *Real-time multi-stage inference progress tracker monitoring local image buffer validation, Ollama vision query, and schema synthesis.*
 
 ### 4. Interactive Structured Editor & Fix Hints
-![Structured Results](docs/images/result.png)
+![Structured Results](docs/working.png)
 *Evidence vs. Hypotheses divergence grid, suggested severity/category triage, and editable suggested fix hints card.*
 
 ### 5. Sensitive Data Redaction Alert
-![Sensitive Data Alert](docs/images/secrets.png)
+![Sensitive Data Alert](docs/working.png)
 *Automated security guardrail warning reporters before publishing exposed API keys, access tokens, or credentials.*
 
 ### 6. Built-in Canvas Annotation Studio
-![Annotation Studio](docs/images/annotate.png)
+![Annotation Studio](docs/working.png)
 *In-browser plain canvas editor supporting red focus boxes, directional arrows, and pixelated redaction blurs before saving.*
 
 ### 7. Triple-Mode Markdown Switcher
-![Markdown Preview](docs/images/markdown.png)
+![Markdown Preview](docs/working.png)
 *Seamless continuous tab switcher allowing maintainers to toggle between the structured form, live sanitized preview, and raw Markdown.*
 
 </div>
