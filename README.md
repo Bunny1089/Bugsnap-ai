@@ -61,8 +61,7 @@ BugSnap AI was crafted as an open-source contribution for **Hacktoberfest Hack D
 
 ## 🎬 Video Demo & Launch Showcase
 
-### 🚀 20-Second Product Launch Video
-
+### 🚀 20-Second Product Launch Film
 <div align="center">
   <video src="brag-output/brag.mp4" controls="controls" width="100%" poster="brag-output/brag.jpg" playsinline preload="metadata">
     <a href="brag-output/brag.mp4">
@@ -73,16 +72,16 @@ BugSnap AI was crafted as an open-source contribution for **Hacktoberfest Hack D
   </video>
 </div>
 
-> 🎥 **Direct Link:** [**`brag-output/brag.mp4`**](brag-output/brag.mp4) (1080p Full HD • 20s)  
-> *Crafted with [**Brag**](https://github.com/latent-spaces/brag) by [Latent Spaces](https://github.com/latent-spaces) & [Hyperframes](https://hyperframes.heygen.com). Special thanks to the [@latent-spaces/brag](https://github.com/latent-spaces/brag) team for the automated launch video engine!*
+> 🎥 **Direct File:** [**`brag-output/brag.mp4`**](brag-output/brag.mp4) (1080p Full HD • 20s)  
+> 🌟 **Huge thanks to [@latent-spaces/brag](https://github.com/latent-spaces/brag)**: This launch video was planned, composed, and rendered automatically using [**Brag**](https://github.com/latent-spaces/brag) by [Latent Spaces](https://github.com/latent-spaces) and [Hyperframes](https://hyperframes.heygen.com).
 
 ---
 
-### 📹 Full Interactive Walkthrough
+### 📹 Full Interactive Walkthrough & Demo
 
-[![Watch the BugSnap AI Video Demo](docs/working.png)](https://youtu.be/aR8upy0Y5qw)
+[![Watch the BugSnap AI Video Demo](docs/working.png)](https://youtu.be/aR8upy0Y5qw?si=68JD8J7gqva2KpvB)
 
-> 📹 **[Watch the Complete Walkthrough Video on YouTube](https://youtu.be/aR8upy0Y5qw)**  
+> 📹 **[Watch the Complete Walkthrough Video on YouTube](https://youtu.be/aR8upy0Y5qw?si=68JD8J7gqva2KpvB)**  
 > *Shows live screenshot paste, multi-image sequencing, on-device Gemma 4 vision inference, sensitive key detection, canvas annotation, and Markdown export.*
 
 ---
