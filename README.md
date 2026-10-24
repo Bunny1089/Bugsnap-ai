@@ -59,7 +59,18 @@ BugSnap AI was crafted as an open-source contribution for **Hacktoberfest Hack D
 
 ---
 
-## 🎬 Video Demo & Preview
+## 🎬 Video Demo & Launch Showcase
+
+### 🚀 20-Second Product Launch Video
+
+[![BugSnap AI 20-Second Launch Video](brag-output/brag.jpg)](brag-output/brag.mp4)
+
+> 🎥 **[Watch the 20-Second Launch Film (MP4)](brag-output/brag.mp4)**  
+> *Crafted with [**Brag**](https://github.com/latent-spaces/brag) by [Latent Spaces](https://github.com/latent-spaces) & [Hyperframes](https://hyperframes.heygen.com). Special thanks to the [@latent-spaces/brag](https://github.com/latent-spaces/brag) team for the automated launch video engine!*
+
+---
+
+### 📹 Full Interactive Walkthrough
 
 [![Watch the BugSnap AI Video Demo](docs/working.png)](https://youtu.be/aR8upy0Y5qw)
 
